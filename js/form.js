@@ -102,3 +102,19 @@ function exibeMensagensDeErro(erros) {
         ul.appendChild(li);
     });
 }
+
+var tabela = document.querySelector("table");
+
+tabela.addEventListener("dblclick", function(event){
+
+    event.target.parentNode.classList.add("efeitodlbclick");
+
+    setTimeout(function(){
+
+        event.target.parentNode.remove();
+
+    }, 500);
+
+});
+
+
